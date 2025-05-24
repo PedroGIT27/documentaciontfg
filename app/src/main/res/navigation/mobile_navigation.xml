@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.version2.tfgpedrollompart2.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.version2.tfgpedrollompart2.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.version2.tfgpedrollompart2.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications"
+        />
+
+    <fragment
+        android:id="@+id/payment_fragment"
+        android:name="com.version2.tfgpedrollompart2.PaymentFragment"
+        android:label="Pago"
+      />
+    <fragment
+        android:id="@+id/sell_fragment"
+        android:name="com.version2.tfgpedrollompart2.sellFragment"
+        android:label="Venta"
+        />
+
+    <fragment
+        android:id="@+id/vender_producto_fragment"
+        android:name="com.version2.tfgpedrollompart2.venderProductoFragment"
+        android:label="Vender producto"
+        />
+
+    <fragment
+        android:id="@+id/chat_fragment"
+        android:name="com.version2.tfgpedrollompart2.chatFragment"
+        android:label="ir al chat"
+        />
+
+    <fragment
+        android:id="@+id/contact_fragment"
+        android:name="com.version2.tfgpedrollompart2.contactFragment"
+        android:label="ir a la lista de contactos."
+        />
+    <fragment
+        android:id="@+id/changePassword_fragment"
+        android:name="com.version2.tfgpedrollompart2.changePasswordFragment"
+        android:label="ir al fragmento de cambio de contraseña.."
+        />
+    <fragment
+        android:id="@+id/changeIcon_fragment"
+        android:name="com.version2.tfgpedrollompart2.changeIconFragment"
+        android:label="ir al fragmento de cambio de perfil."
+        />
+
+
+</navigation>

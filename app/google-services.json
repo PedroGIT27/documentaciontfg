@@ -1,0 +1,257 @@
+{
+  "project_info": {
+    "project_number": "809195978785",
+    "project_id": "examen-8b578",
+    "storage_bucket": "examen-8b578.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:809195978785:android:0281edc3840c7633fb2360",
+        "android_client_info": {
+          "package_name": "com.example.examenpedro"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFA4Ut1Y8vwtTmGsSlMHC1fCYaYLsC1SA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:809195978785:android:16914ad1822768f6fb2360",
+        "android_client_info": {
+          "package_name": "com.example.examenpractica"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFA4Ut1Y8vwtTmGsSlMHC1fCYaYLsC1SA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:809195978785:android:8a305d097a793bd5fb2360",
+        "android_client_info": {
+          "package_name": "com.example.myapplicatioeusko3d2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFA4Ut1Y8vwtTmGsSlMHC1fCYaYLsC1SA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:809195978785:android:b40e59b105a80b03fb2360",
+        "android_client_info": {
+          "package_name": "com.version2.eusko3dlite"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFA4Ut1Y8vwtTmGsSlMHC1fCYaYLsC1SA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:809195978785:android:e63eb8182fa32515fb2360",
+        "android_client_info": {
+          "package_name": "com.version2.examenmodelo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFA4Ut1Y8vwtTmGsSlMHC1fCYaYLsC1SA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:809195978785:android:0ae9f8166b65f52bfb2360",
+        "android_client_info": {
+          "package_name": "com.version2.examenpractica"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFA4Ut1Y8vwtTmGsSlMHC1fCYaYLsC1SA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:809195978785:android:70d74cd585fbf9e2fb2360",
+        "android_client_info": {
+          "package_name": "com.version2.examenpractica2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFA4Ut1Y8vwtTmGsSlMHC1fCYaYLsC1SA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:809195978785:android:464f033ac55b2b2efb2360",
+        "android_client_info": {
+          "package_name": "com.version2.examenpractica3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFA4Ut1Y8vwtTmGsSlMHC1fCYaYLsC1SA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:809195978785:android:d1c84f8fe3bb418afb2360",
+        "android_client_info": {
+          "package_name": "com.version2.examenpractica4"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFA4Ut1Y8vwtTmGsSlMHC1fCYaYLsC1SA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:809195978785:android:002bc33879918ae1fb2360",
+        "android_client_info": {
+          "package_name": "com.version2.examenpractica5"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFA4Ut1Y8vwtTmGsSlMHC1fCYaYLsC1SA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:809195978785:android:ef7e4f157846541afb2360",
+        "android_client_info": {
+          "package_name": "com.version2.modeloexamen2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFA4Ut1Y8vwtTmGsSlMHC1fCYaYLsC1SA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:809195978785:android:8ccb57e7b98ea803fb2360",
+        "android_client_info": {
+          "package_name": "com.version2.recuperacion2practica"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFA4Ut1Y8vwtTmGsSlMHC1fCYaYLsC1SA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:809195978785:android:0746c5c196f87224fb2360",
+        "android_client_info": {
+          "package_name": "com.version2.tfgpedrollompart2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFA4Ut1Y8vwtTmGsSlMHC1fCYaYLsC1SA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

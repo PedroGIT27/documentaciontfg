@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/custom_purple"
+    android:clipToPadding="false"
+    android:paddingBottom="32dp"
+    android:fillViewport="true"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Botón de volver -->
+        <ImageButton
+            android:id="@+id/arrow_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end"
+            android:src="@android:drawable/ic_menu_revert"
+            android:contentDescription="@string/back_button_desc"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:tint="@color/white" />
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/register_textView_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vender Producto"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/register_textView_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bienvenido, introduzca los datos del producto."
+            android:textColor="@color/gray"
+            android:layout_marginTop="8dp" />
+
+        <!-- Imagen -->
+        <ImageView
+            android:id="@+id/product_Image"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="Imagen del producto"
+            android:scaleType="centerCrop"
+            android:background="@color/gray" />
+
+        <!-- Título del juego -->
+        <TextView
+            android:id="@+id/select_game"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Introduzca el título:"
+            android:textColor="@color/white"
+            android:layout_marginTop="16dp" />
+        <EditText
+            android:id="@+id/game_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:hint="Título del producto"
+            android:textColor="@color/white" />
+
+        <!-- Descripción -->
+        <TextView
+            android:id="@+id/game_description_title"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:text="Descripción del producto:"
+            android:textColor="@color/white"
+            android:layout_marginTop="16dp" />
+        <EditText
+            android:id="@+id/game_description"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:minHeight="48dp"
+            android:textColor="@color/white"
+            android:minLines="3"
+            android:gravity="top"
+            android:hint="Describe tu producto:" />
+
+        <!-- Chat -->
+        <CheckBox
+            android:id="@+id/checkbox_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activar el chat"
+            android:textColor="@color/white"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/descripcion_chat"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:textColor="@color/gray"
+            android:text="Permite que los compradores te envíen un mensaje si necesitan más detalles sobre este artículo. Si lo dejas activado, aumentarás las posibilidades de venta."
+            android:layout_marginBottom="16dp" />
+
+        <!-- Condición -->
+        <TextView
+            android:id="@+id/condiciontxt"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="Condición del producto:"
+            android:textColor="@color/white" />
+        <Spinner
+            android:id="@+id/stateSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:minHeight="48dp"
+            android:backgroundTint="@color/white" />
+
+        <!-- Envío -->
+        <TextView
+            android:id="@+id/opcionEnviotxt"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="Opciones de envío:"
+            android:textColor="@color/white"
+            android:layout_marginTop="16dp" />
+        <Spinner
+            android:id="@+id/countrySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:minHeight="48dp"
+            android:backgroundTint="@color/white" />
+
+        <EditText
+            android:id="@+id/cpEdit"
+            android:layout_width="136dp"
+            android:layout_height="48dp"
+            android:hint="Código postal"
+            android:minHeight="48dp"
+            android:textColor="@color/white" />
+
+        <!-- Precio -->
+        <TextView
+            android:id="@+id/pricetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Introduce el precio de tu producto:"
+            android:textColor="@color/white"
+            android:layout_marginTop="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <EditText
+                android:id="@+id/priceEdit"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:minHeight="48dp"
+                android:layout_weight="1"
+                android:hint="Precio"
+                android:textColor="@color/white"
+                android:layout_marginEnd="8dp" />
+            <Spinner
+                android:id="@+id/coinSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:minHeight="48dp"
+                android:backgroundTint="@color/white" />
+        </LinearLayout>
+        <!-- Términos -->
+        <TextView
+            android:id="@+id/terminosCondicionesTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray"
+            android:text="@string/al_crear_una_cuenta_acepto_los_t_rminos_y_condiciones_y_las_pol_ticas_de_privacidad_de_netjoy_com"
+            android:layout_marginTop="16dp" />
+        <!-- Confirmar -->
+
+        <Button
+            android:id="@+id/confirmBtn"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="32dp"
+            android:backgroundTint="@color/custom_yellow"
+            android:text="@string/confirmar"
+            android:textColor="@color/custom_purple"/>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

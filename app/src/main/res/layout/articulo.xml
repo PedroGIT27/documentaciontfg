@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/item_background"
+    android:padding="12dp">
+
+    <!-- Imagen del juego -->
+    <ImageView
+        android:id="@+id/fotoImage"
+        android:layout_width="0dp"
+        android:layout_height="180dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="Portada del juego" />
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tituloText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Título del Juego"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/fotoImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Precio -->
+    <TextView
+        android:id="@+id/pricetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="€59.99"
+        android:textSize="16sp"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@id/tituloText"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Botón carrito -->
+    <Button
+        android:id="@+id/carritobtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🛒 Añadir"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/tituloText"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="4dp" />
+
+    <!-- Botón retirar producto. -->
+    <Button
+        android:id="@+id/trashBtn"
+        android:layout_width="65dp"
+        android:layout_height="57dp"
+        android:backgroundTint="@color/red"
+        android:text="🗑️"
+        android:textAlignment="center"
+
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

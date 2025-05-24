@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/custom_purple"
+    tools:context=".ui.home.HomeFragment">
+
+    <!-- Botón de volver (esquina superior izquierda) -->
+    <ImageButton
+        android:id="@+id/arrow_back"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/back_button_desc"
+        android:src="@android:drawable/ic_menu_revert"
+        app:tint="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+    <!-- Scroll principal con contenido -->
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/arrow_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingBottom="60dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Card de búsqueda -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/search_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <SearchView
+                    android:id="@+id/searchView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/searchbar_background"
+                    android:iconifiedByDefault="false"
+                    android:queryHint="Buscar..." />
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Texto de problemas -->
+            <TextView
+                android:id="@+id/problemastxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Problemas a solucionar:"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:layout_marginTop="16dp"/>
+
+            <!-- Contenedor de filas -->
+            <LinearLayout
+                android:id="@+id/FilasCatalogo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="aqui van las filas del catalogo" />
+            </LinearLayout>
+            <!-- Botón de vender (esquina superior derecha) -->
+            <Button
+                android:id="@+id/sellBtn"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_margin="16dp"
+                android:layout_gravity="center"
+
+                android:backgroundTint="@color/yellow"
+                android:contentDescription="@string/btn_sell_product"
+                android:text="✚"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:importantForAccessibility="yes"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

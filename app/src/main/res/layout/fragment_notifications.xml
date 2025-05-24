@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/custom_purple"
+    android:paddingBottom="60dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/custom_purple"
+        android:gravity="center_horizontal">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:cardElevation="6dp"
+            app:cardBackgroundColor="@color/custom_purple_dark"
+            >
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/custom_purple_dark"
+            android:gravity="center_vertical"
+            android:padding="12dp">
+
+            <ImageView
+                android:id="@+id/profileImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher_foreground"
+                android:contentDescription="Imagen de perfil" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="start">
+
+                <TextView
+                    android:id="@+id/bienvenidoText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¡Bienvenido!"
+                    android:textColor="@color/white"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/nombretxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre del Usuario"
+                    android:textColor="@color/white"
+                    android:textStyle="italic" />
+            </LinearLayout>
+        </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:padding="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp"
+            app:cardBackgroundColor="@color/custom_purple_dark"
+            >
+
+
+        <!-- Datos -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/custom_purple_dark"
+            android:paddingTop="4dp"
+            android:padding="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/custom_purple_dark"
+                android:paddingTop="4dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Nombre:"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/nombreValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/custom_purple_dark"
+                android:paddingTop="4dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Correo Electrónico:"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/mailtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ejemplo@mail.com"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/custom_purple_dark"
+                android:paddingTop="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha de registro:"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/fechaRegistrotxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="2024-04-18"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/MiCuentatxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:text="Mi Cuenta"
+            android:textColor="@color/purple_200"
+            android:textSize="18sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingTop="4dp"
+        android:id="@+id/chatLayOut">
+        <ImageView
+            android:id="@+id/chatImage"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginStart="-90dp"
+            android:src="@drawable/circle_chat"
+           />
+        <TextView
+            android:id="@+id/chatxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="Ir al chat"
+            android:textColor="@color/purple_200"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+        <Button
+            android:id="@+id/chatbtn"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Ir al chat."
+            android:backgroundTint="@color/yellow"
+            android:textColor="@color/black" />
+        <!-- Botones -->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingTop="4dp"
+            android:id="@+id/sellLayOut">
+            <ImageView
+                android:id="@+id/sellImage"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_marginStart="-70dp"
+                android:src="@drawable/sell"
+                />
+            <TextView
+                android:id="@+id/selltxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="Vender productos"
+                android:textColor="@color/purple_200"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+            <Button
+                android:id="@+id/sellbtn"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Vender productos."
+                android:backgroundTint="@color/yellow"
+                android:textColor="@color/black" />
+
+
+
+        <!-- Cerrar sesión -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingTop="4dp"
+            android:id="@+id/logOutLayOut">
+            <ImageView
+                android:id="@+id/logoutImage"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_marginStart="-80dp"
+                android:src="@drawable/log_out"
+                />
+            <TextView
+                android:id="@+id/logoutxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="Cerrar Sesión"
+                android:textColor="@color/purple_200"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+            <Button
+                android:id="@+id/logOutbtn"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Cerrar Sesión"
+                android:backgroundTint="@color/yellow"
+                android:textColor="@color/black" />
+
+
+
+
+        <!-- Opciones para el perfil -->
+        <TextView
+            android:id="@+id/MiPerfiltxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_weight="1"
+            android:text="Mi Perfil"
+            android:textColor="@color/purple_200"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingTop="4dp"
+            android:id="@+id/passwdchangeLayOut">
+            <ImageView
+                android:id="@+id/passwdchangeImage"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_marginStart="-60dp"
+                android:src="@drawable/change_password"
+                />
+            <TextView
+                android:id="@+id/passwdchangext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="Cambiar contraseña"
+                android:textColor="@color/purple_200"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+            <Button
+                android:id="@+id/changePasswordbtn"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Cambiar contraseña"
+                android:backgroundTint="@color/yellow"
+                android:textColor="@color/black" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingTop="4dp"
+            android:id="@+id/profileChangeLayOut">
+
+            <ImageView
+                android:id="@+id/profileChangeImage"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_marginStart="-55dp"
+                android:src="@drawable/change_profile"
+                />
+
+            <TextView
+                android:id="@+id/profileChangetxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="Cambiar imagen de Perfil"
+                android:textColor="@color/purple_200"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+            <Button
+                android:id="@+id/changeProfilebtn"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Cambiar imagen de perfil"
+                android:backgroundTint="@color/yellow"
+                android:textColor="@color/black" />
+
+
+        <TextView
+            android:id="@+id/Copyrighttxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Copyright © NetJoy. Todos los derechos \n reservados. JSC 'Helis Play', Gyneju St. 4-333,\n
+Getxo, Spain. Términos y Condiciones, Política de Privacidad, Programación de productos físicos."
+            android:textColor="@color/purple_200"
+            android:textSize="18sp"
+            android:padding="20dp"/>
+
+        <TextView
+            android:id="@+id/Copyrighttxt2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="NetJoy.com v19.26. build 1185"
+            android:textColor="@color/purple_200"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

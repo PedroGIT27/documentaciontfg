@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nestedScroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/custom_purple"
+    android:paddingBottom="60dp"
+    tools:context=".changeIconFragment">
+
+    <!-- Hijo del nestedScrollView. -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Botón de volver -->
+        <ImageButton
+            android:id="@+id/arrow_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="start"
+            android:src="@android:drawable/ic_menu_revert"
+            android:contentDescription="@string/back_button_desc"
+            android:background="?attr/selectableItemBackgroundBorderless" />
+
+        <ImageView
+            android:id="@+id/profileImage"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="end"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/profileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="@string/tu_nombre"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp" />
+
+        <!-- Primer carrusel de iconos -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/editar_perfil"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:layout_marginBottom="8dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/elige_un_icono_para_el_perfil"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/los_b_sicos"
+            android:textColor="@android:color/white"
+            android:textSize="28sp"
+            android:layout_marginBottom="8dp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/basicIconLine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- 3 imágenes de ejemplo básicas -->
+                <ImageView
+                    android:id="@+id/lionImage"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/leon"
+
+
+                    android:contentDescription="Descripcion basic 1" />
+
+                <ImageView
+                    android:id="@+id/dogImage"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/perro"
+
+                    android:contentDescription="Descripcion basic 2" />
+
+                <ImageView
+                    android:id="@+id/catImage"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/gato"
+
+                    android:contentDescription="Descripcion basic 3" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- Segundo carrusel de iconos -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gamers:"
+            android:textColor="@android:color/white"
+            android:textSize="28sp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/gamerIconLine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- 3 imágenes de ejemplo gamers -->
+                <ImageView
+                    android:id="@+id/nintendoImage"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/nintendo"
+
+                    android:contentDescription="Descripcion 1" />
+
+                <ImageView
+                    android:id="@+id/sonyImage"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/sony"
+
+                    android:contentDescription="Descripcion Gamer 2" />
+
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

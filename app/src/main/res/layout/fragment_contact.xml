@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".contactFragment"
+    android:background="@color/custom_purple">
+
+    <ImageButton
+        android:id="@+id/arrow_back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="start"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/back_button_desc"
+        android:src="@android:drawable/ic_menu_revert" />
+
+    <ScrollView
+        android:id="@+id/ContactscrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/custom_purple"
+        android:paddingBottom="60dp">
+
+        <LinearLayout
+            android:id="@+id/filasContacto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/hello_blank_fragment" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

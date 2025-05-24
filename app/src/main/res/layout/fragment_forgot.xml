@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/forgotLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/custom_purple"
+    android:padding="24dp"
+  >
+
+    <!-- Botón de retroceso -->
+    <ImageButton
+        android:id="@+id/arrow_back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="start"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/back_button_desc"
+        android:src="@android:drawable/ic_menu_revert" />
+
+    <!-- Texto de instrucciones -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/ingresa_la_direcci_n_de_correo_electr_nico_que_utilizaste_anteriormente_y_te_enviaremos_instrucciones_de_como_reestablecer_tu_contrase_a"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <!-- Campo de email -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="email:"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/gmailEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="escribe aqui"
+        android:minHeight="48dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/gray" />
+
+    <!-- Campo de usuario -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="usuario:"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/usernameEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="escribe aqui"
+        android:minHeight="48dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/gray" />
+
+    <!-- Botón de enviar -->
+    <Button
+        android:id="@+id/sendbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/custom_yellow"
+        android:text="@string/continuar"
+        android:textColor="@color/custom_purple" />
+
+</LinearLayout>

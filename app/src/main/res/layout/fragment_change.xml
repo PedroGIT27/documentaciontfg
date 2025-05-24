@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nestedScroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/custom_purple"
+    android:paddingBottom="60dp"
+    tools:context=".changeFragment">
+
+    <!-- LinearLayout como único hijo del NestedScrollView -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Back Button -->
+        <ImageButton
+            android:id="@+id/arrow_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/back_button_desc"
+            android:src="@android:drawable/ic_menu_revert" />
+
+        <!-- Código -->
+        <LinearLayout
+            android:id="@+id/codeLO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <EditText
+                android:id="@+id/codeEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:hint="Introduce el código:"
+                android:minHeight="48dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/gray" />
+
+            <Button
+                android:id="@+id/confirmbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/custom_yellow"
+                android:text="@string/confirmar"
+                android:textAlignment="center"
+                android:textColor="@color/custom_purple" />
+        </LinearLayout>
+
+        <!-- Títulos y texto informativo -->
+        <LinearLayout
+            android:id="@+id/presentationLO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:padding="16dp"
+                android:text="netjoy"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:padding="16dp"
+                android:text="Nueva contraseña:"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/registerBacktxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:padding="16dp"
+                android:text="Volver al registro"
+                android:textColor="@color/yellow" />
+        </LinearLayout>
+
+        <!-- Campos de contraseña -->
+        <LinearLayout
+            android:id="@+id/passwordLO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <EditText
+                android:id="@+id/passwordEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:hint="nueva contraseña:"
+                android:minHeight="48dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/gray" />
+
+            <EditText
+                android:id="@+id/repeatPasswordEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:hint="repite la nueva contraseña"
+                android:minHeight="48dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/gray" />
+        </LinearLayout>
+
+        <!-- Condiciones -->
+        <LinearLayout
+            android:id="@+id/conditionsLO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:padding="16dp"
+                android:text="Condiciones"
+                android:textColor="@color/yellow" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:padding="16dp"
+                android:text=" ○ Por lo menos 9 caracteres."
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:padding="16dp"
+                android:text=" ○ Asegúrate de meter por lo menos un número o un caracter especial."
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <!-- Botón de continuar -->
+        <Button
+            android:id="@+id/sendbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/custom_yellow"
+            android:text="@string/continuar"
+            android:textAlignment="center"
+            android:textColor="@color/custom_purple" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
